@@ -1,5 +1,5 @@
 import { Button } from 'antd';
-import Layout from 'common/layout';
+import Layout from 'common/Layout/layout';
 import { attributes, html } from '../content/home.md';
 
 const Home = () => (

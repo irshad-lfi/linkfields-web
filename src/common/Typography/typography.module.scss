@@ -1,0 +1,238 @@
+@mixin addWithDefault($property, $value: null, $default: null) {
+  @if ($value) {
+    #{$property}: #{$value};
+  } @else {
+    @if ($default) {
+      #{$property}: #{$default};
+    }
+  }
+}
+
+@mixin addFont(
+  $familty: null,
+  $font-weight: null,
+  $font-size: null,
+  $letter-spacing: null,
+  $line-height: null
+) {
+  @include addWithDefault('font-family', $familty, 'Switzer');
+  @include addWithDefault('font-size', $font-size);
+  @include addWithDefault('letter-spacing', $letter-spacing);
+}
+
+@media screen and (max-width: 480px) {
+  .typography_root h1 {
+    font-family: 'Switzer Light' !important;
+    font-size: 56px !important;
+  }
+
+  .typography_root h2 {
+    font-family: 'Switzer Light' !important;
+    font-size: 38px !important;
+  }
+
+  .typography_root h3 {
+    font-family: 'Switzer Light' !important;
+    font-size: 30px !important;
+  }
+
+  .typography_root h4 {
+    font-family: 'Switzer Light' !important;
+    font-size: 24px !important;
+  }
+
+  .typography_root h5 {
+    font-family: 'Switzer Regular' !important;
+    font-size: 24px !important;
+  }
+
+  .typography_root h6 {
+    font-family: 'Switzer Regular' !important;
+    font-size: 18px !important;
+  }
+
+  .typography_root :global(.lf-bd-lg) {
+    font-family: 'Switzer Light' !important;
+    font-size: 24px !important;
+  }
+
+  .typography_root :global(.lf-bd-md) {
+    font-family: 'Switzer Regular' !important;
+    font-size: 16px !important;
+  }
+
+  .typography_root :global(.lf-bd-sm) {
+    font-family: 'Switzer Regular' !important;
+    font-size: 16px !important;
+  }
+
+  .typography_root :global(.lf-input-text) {
+    font-family: 'Switzer Regular' !important;
+    font-size: 20px !important;
+  }
+
+  .typography_root :global(.lf-caption) {
+    font-family: 'Switzer Medium' !important;
+    font-size: 14px !important;
+  }
+
+  .typography_root :global(.lf-btn) {
+    font-family: 'Switzer Regular' !important;
+    font-size: 18px !important;
+  }
+
+  .typography_root :global(.lf-link) {
+    font-family: 'Switzer Light' !important;
+    font-size: 18px !important;
+  }
+
+  .typography_root :global(.lf-tags) {
+    font-family: 'Switzer Regular' !important;
+    font-size: 16px !important;
+  }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 768px) {
+  .typography_root h1 {
+    font-family: 'Switzer Light' !important;
+    font-size: 96px !important;
+  }
+
+  .typography_root h2 {
+    font-family: 'Switzer Light' !important;
+    font-size: 64px !important;
+  }
+
+  .typography_root h3 {
+    font-family: 'Switzer Light' !important;
+    font-size: 56px !important;
+  }
+
+  .typography_root h4 {
+    font-family: 'Switzer Light' !important;
+    font-size: 48px !important;
+  }
+
+  .typography_root h5 {
+    font-family: 'Switzer Regular' !important;
+    font-size: 30px !important;
+  }
+
+  .typography_root h6 {
+    font-family: 'Switzer Regular' !important;
+    font-size: 24px !important;
+  }
+
+  .typography_root :global(.lf-bd-lg) {
+    font-family: 'Switzer Light' !important;
+    font-size: 36px !important;
+  }
+
+  .typography_root :global(.lf-bd-md) {
+    font-family: 'Switzer Regular' !important;
+    font-size: 24px !important;
+  }
+
+  .typography_root :global(.lf-bd-sm) {
+    font-family: 'Switzer Regular' !important;
+    font-size: 18px !important;
+  }
+
+  .typography_root :global(.lf-input-text) {
+    font-family: 'Switzer Regular' !important;
+    font-size: 32px !important;
+  }
+
+  .typography_root :global(.lf-caption) {
+    font-family: 'Switzer Medium' !important;
+    font-size: 20px !important;
+  }
+
+  .typography_root :global(.lf-btn) {
+    font-family: 'Switzer Regular' !important;
+    font-size: 20px !important;
+  }
+
+  .typography_root :global(.lf-link) {
+    font-family: 'Switzer Light' !important;
+    font-size: 20px !important;
+  }
+
+  .typography_root :global(.lf-tags) {
+    font-family: 'Switzer Regular' !important;
+    font-size: 20px !important;
+  }
+}
+
+//large screen
+@media screen and (min-width: 1441px) {
+  .typography_root h1 {
+    font-family: 'Switzer Light' !important;
+    font-size: 148px !important;
+  }
+
+  .typography_root h2 {
+    font-family: 'Switzer Light' !important;
+    font-size: 96px !important;
+  }
+
+  .typography_root h3 {
+    font-family: 'Switzer Light' !important;
+    font-size: 76px !important;
+  }
+
+  .typography_root h4 {
+    font-family: 'Switzer Light' !important;
+    font-size: 56px !important;
+  }
+
+  .typography_root h5 {
+    font-family: 'Switzer Regular' !important;
+    font-size: 40px !important;
+  }
+
+  .typography_root h6 {
+    font-family: 'Switzer Regular' !important;
+    font-size: 28px !important;
+  }
+
+  .typography_root :global(.lf-bd-lg) {
+    font-family: 'Switzer Light' !important;
+    font-size: 40px !important;
+  }
+
+  .typography_root :global(.lf-bd-md) {
+    font-family: 'Switzer Regular' !important;
+    font-size: 28px !important;
+  }
+
+  .typography_root :global(.lf-bd-sm) {
+    font-family: 'Switzer Regular' !important;
+    font-size: 24px !important;
+  }
+
+  .typography_root :global(.lf-input-text) {
+    font-family: 'Switzer Regular' !important;
+    font-size: 32px !important;
+  }
+
+  .typography_root :global(.lf-caption) {
+    font-family: 'Switzer Medium' !important;
+    font-size: 20px !important;
+  }
+
+  .typography_root :global(.lf-btn) {
+    font-family: 'Switzer Regular' !important;
+    font-size: 20px !important;
+  }
+
+  .typography_root :global(.lf-link) {
+    font-family: 'Switzer Light' !important;
+    font-size: 20px !important;
+  }
+
+  .typography_root :global(.lf-tags) {
+    font-family: 'Switzer Regular' !important;
+    font-size: 20px !important;
+  }
+}

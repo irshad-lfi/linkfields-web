@@ -1,4 +1,4 @@
-import Layout from 'common/layout';
+import Layout from 'common/Layout/layout';
 import { attributes, html } from '../content/about.md';
 
 const About = () => (

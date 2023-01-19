@@ -1,7 +1,8 @@
 import Link from 'next/link';
+import styles from './layout.module.scss';
 
 const Layout = ({ children }) => (
-  <>
+  <div className={styles.container}>
     <nav>
       <Link href="/" legacyBehavior>
         <a>home</a>
@@ -27,7 +28,7 @@ const Layout = ({ children }) => (
         flex-direction: column;
       }
     `}</style>
-  </>
+  </div>
 );
 
 export default Layout;
