@@ -1,6 +1,3 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
-const withLess = require('next-with-less');
-
 const config = {
   compress: true,
   swcMinify: true,
@@ -37,5 +34,5 @@ module.exports = async (_phase, { defaultConfig }) => {
   delete nextConfig.experimental;
   delete nextConfig.i18n;
 
-  return withLess(nextConfig);
+  return nextConfig;
 };
