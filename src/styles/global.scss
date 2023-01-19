@@ -1,4 +1,4 @@
-@import './fonts/fonts/fonts.css';
+@import './fonts/switzer/styles.css';
 @import 'variables.scss';
 @import 'custom.scss';
 
@@ -6,9 +6,6 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: Telkom123-Regular, -apple-system, BlinkMacSystemFont, Segoe UI,
-    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-    sans-serif;
 }
 
 a {
@@ -18,15 +15,4 @@ a {
 
 * {
   box-sizing: border-box;
-}
-
-.theme-container {
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-.mute {
-  color: #696969;
 }
