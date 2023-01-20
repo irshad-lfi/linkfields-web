@@ -2,13 +2,14 @@
 title: Linkfields Home!!!
 
 hero_sliders:
-  - category: 'Telecom'
+  - category: Telecom
     title: An automation revolution in banking
     description: Re-constructing the present banking scenario into a future-ready workspace.
     image: https://url.jpg
     button: gfgfgf
+    button_text: Explore More
 
-  - category: 'Banking'
+  - category: Banking
     title: An automation revolution in banking
     description: Re-constructing the present banking scenario into a future-ready workspace.
     image: https://url.com
