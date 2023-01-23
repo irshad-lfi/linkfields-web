@@ -1,0 +1,21 @@
+.container {
+  width: 100%;
+
+  .carousel_root {
+    height: 70px;
+    background-color: black;
+
+    :global(.slick-track) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .image_container {
+    height: 100%;
+
+    .image {
+      text-align: center;
+    }
+  }
+}

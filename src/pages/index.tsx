@@ -1,5 +1,6 @@
 import { Button } from 'antd';
 import Layout from 'common/Layout/layout';
+import Slider from 'components/Slider/Slider';
 import { attributes, html } from '../content/home.md';
 
 const Home = () => (
@@ -27,6 +28,7 @@ const Home = () => (
           </Button>
         </p>
       </form>
+      <Slider />
     </div>
     <style jsx>{`
       h1,
