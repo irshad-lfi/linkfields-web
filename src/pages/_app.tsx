@@ -6,6 +6,7 @@ import { ConfigProvider } from 'antd';
 import { ThemeConfig } from 'antd/lib/config-provider/context';
 
 const themeConfiguration: ThemeConfig = {
+  hashed: false,
   token: {
     colorPrimary: '#FF7800',
     controlHeight: 70,
