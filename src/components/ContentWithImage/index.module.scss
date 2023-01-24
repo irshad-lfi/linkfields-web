@@ -1,0 +1,41 @@
+.root_container {
+  position: relative;
+  // display:inline-block;
+  // max-width: 613px;
+  // min-height: 388.38px;
+  height: 100%;
+}
+
+.img_noBrRad {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: unset !important;
+  }
+}
+
+.img_container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  img {
+    border-radius: 32px;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+}
+
+.content_container {
+  height: 100%;
+  // border-radius: 32px;
+  position: relative;
+}

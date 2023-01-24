@@ -1,0 +1,132 @@
+.container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding: 3rem !important;
+  // justify-content: space-between;
+}
+
+.form_container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  // margin-left: 3rem;
+  justify-self: center;
+
+  .tag {
+    margin-bottom: 2rem;
+    color: #ff7800;
+  }
+
+  .title {
+    max-width: 35rem;
+    margin: auto;
+    color: #272727;
+  }
+}
+
+.form_container {
+  // margin: 3rem auto 0;
+
+  .btn {
+    width: 157px;
+    height: 70px;
+    // margin-left: 30.2rem;
+    position: absolute;
+    right: 3rem;
+  }
+}
+
+.form_container input {
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  border-bottom: 1px solid #d1d6d7;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin-bottom: 3.7rem;
+  color: #272727;
+  // width: 100%;
+}
+
+.name::placeholder {
+  color: #8a8e8f;
+}
+
+.companyName::placeholder {
+  color: #8a8e8f;
+}
+
+.email::placeholder {
+  color: #8a8e8f;
+}
+
+.message::placeholder {
+  color: #8a8e8f;
+}
+
+.form_container input:hover {
+  border-bottom: 1px solid #8a8e8f;
+}
+
+.form_container input:focus {
+  outline: none !important;
+  border-top: 1px solid #272727 !important;
+  border-bottom: 1px solid #272727 !important;
+  color: #272727;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: 100% !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+
+  .content {
+    justify-self: unset !important;
+  }
+
+  .form_container input {
+    // width: 42rem !important;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1.2rem !important;
+  }
+
+  .form_container {
+    margin: unset !important;
+
+    .btn {
+      // margin-top: 3rem;
+      float: right;
+    }
+  }
+
+  .content {
+    .title {
+      margin: unset !important;
+      max-width: 20rem;
+    }
+  }
+}
+
+@media screen and (max-width: 666px) {
+  .container {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  .form_container input {
+    width: 100%;
+  }
+
+  .form_container {
+    .btn {
+      width: 143px;
+      height: 60px;
+    }
+  }
+}

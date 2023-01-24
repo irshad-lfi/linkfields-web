@@ -1,41 +1,72 @@
-import { Button } from 'antd';
 import Layout from 'common/Layout/layout';
-import Slider from 'components/Slider/Slider';
+import GetInTouch from 'components/GetInTouch/GetInTouch';
+import HeroSection from 'components/HeroSection/HeroSection';
+import ShowItems from 'components/ShowItems/ShowItems';
+import SingleCardSection from 'components/SingleCardSection/SingleCard';
+import singleCardBg from '../../public/images/homeSingleCard_bg.png';
+import telcom from '../../public/images/telcom.png';
+import fmcg from '../../public/images/fmcg.png';
+import banking from '../../public/images/banking.png';
+import manufacturing from '../../public/images/manufacturing.png';
 import { attributes, html } from '../content/home.md';
+import FullScreenImg from 'components/FullScreenImg/FullScreenImg';
+import fullImg from '../../public/images/company_banner.png';
+import Blogs from 'components/Blogs/Blogs';
+import SliderComponent from 'components/SliderComponent/SliderComponent';
+import ServicesSection from 'components/ServicesSection/ServicesSection';
+import engineering from '../../public/images/engineering.png';
+import cloud from '../../public/images/cloud.png';
+import consulting from '../../public/images/consulting.png';
+
+const items = [
+  {
+    title: 'Telecom',
+    image: telcom,
+  },
+  {
+    title: 'FMCG',
+    image: fmcg,
+  },
+  {
+    title: 'Banking',
+    image: banking,
+  },
+  {
+    title: 'Manufacturing',
+    image: manufacturing,
+  },
+];
 
 const Home = () => (
   <Layout>
-    <h1>{attributes.title}</h1>
-    <div dangerouslySetInnerHTML={{ __html: html }} />
-    <div>
-      <form name="contact" method="POST" data-netlify="true">
-        <input type="hidden" name="form-name" value="contact" />
-        <p>
-          <label htmlFor="name">Name</label>
-          <input type="text" id="name" name="name" />
-        </p>
-        <p>
-          <label htmlFor="email">Email</label>
-          <input type="text" id="email" name="email" />
-        </p>
-        <p>
-          <label htmlFor="message">Message</label>
-          <textarea id="message" name="message"></textarea>
-        </p>
-        <p>
-          <Button type="primary" htmlType="submit">
-            Send
-          </Button>
-        </p>
-      </form>
-      <Slider />
-    </div>
-    <style jsx>{`
-      h1,
-      div {
-        text-align: center;
-      }
-    `}</style>
+    <HeroSection />
+    <ServicesSection />
+    <ShowItems
+      tag="Industries"
+      title="Years of experience with a myriad of industries & fields"
+      btn="Explore industries"
+      cardType="side"
+      items={items}
+    />
+    <SliderComponent />
+    <FullScreenImg
+      tag="Our Story"
+      title="About Linkfields"
+      desc="From careers to iconic moments in our history, see what’s current in Linkfields"
+      btn="Learn more"
+      image={fullImg}
+      onClick={() => console.log('Linkfields')}
+    />
+    <Blogs />
+    <SingleCardSection
+      bgColor="#F0F0F0"
+      imgSrc={singleCardBg}
+      tag="careers"
+      title="Ready for an extraordinary work experience?"
+      btn="Join us"
+      onClick={() => console.log('Linkfields')}
+    />
+    <GetInTouch />
   </Layout>
 );
 
