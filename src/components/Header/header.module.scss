@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  background: transparent;
+  color: #f0f0f0;
+  justify-content: space-between;
+  padding: 2rem;
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+
+  .img_con {
+    position: relative;
+    width: 181.6px;
+    height: 40.03px;
+  }
+
+  .links {
+    display: flex;
+    .link {
+      margin-right: 3rem;
+    }
+  }
+
+  .btn {
+    width: 134px;
+    height: 50px;
+    background: transparent !important;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .links {
+    display: none !important;
+  }
+
+  .btn {
+    display: none !important;
+  }
+}
